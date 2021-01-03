@@ -1,10 +1,15 @@
 {
     "name": "hexlet/code",
+    "description": "pet-project",
+    "license": "MIT",
     "authors": [
         {
             "name": "Alex",
             "email": "box-570@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+      "bin/brain-games"
+    ]
 }
