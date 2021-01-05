@@ -23,7 +23,6 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-    - run: make lint
+      - name: Run make lint
+        run: |
+          make lint
