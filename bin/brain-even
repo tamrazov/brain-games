@@ -13,8 +13,6 @@ if (file_exists($autoloadPath1)) {
 
 use function cli\line;
 use function cli\prompt;
-
-use function Php\Project\Cli\hello;
 use function Php\Project\Cli\isEven;
 
 line('Welcome to the Brain Game!');
@@ -23,9 +21,9 @@ line("Hello, %s!", $name);line('Answer "yes" if the number is even, otherwise an
 for($i = 0; $i < 3; $i++) {
   $number = rand(1, 15);
   $question = "Question: {$number}";
-  $answer = prompt($question);
   $currectAnswer = isEven($number) ? "yes" : "no";
 
+  $answer = prompt($question);
   if ((isEven($number) && $answer === 'yes') || (!isEven($number) && $answer === "no")) {
     if ($i == 2) {
       line('Congratulations, %s!', $name);
