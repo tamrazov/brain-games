@@ -11,3 +11,12 @@ function hello()
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 }
+
+function isEven(int $number): bool
+{
+    if ($number % 2 == 0) {
+      return true;
+    }
+
+    return false;
+}

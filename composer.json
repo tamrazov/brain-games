@@ -12,12 +12,13 @@
         "wp-cli/php-cli-tools": "0.11.11"
     },
     "bin": [
-      "bin/brain-games"
+      "bin/brain-games",
+      "bin/brain-even"
     ],
     "autoload": {
       "psr-4": {
-        "Php\\Project\\": "src",
-        "Php\\Project\\Tests\\": "tests"
+        "Php\\Package\\": "src",
+        "Php\\Package\\Tests\\": "tests"
       },
       "files": [
         "src/Cli.php"
