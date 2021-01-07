@@ -13,15 +13,19 @@
     },
     "bin": [
       "bin/brain-games",
-      "bin/brain-even"
+      "bin/brain-even",
+      "bin/brain-calc"
     ],
     "autoload": {
       "psr-4": {
-        "Php\\Package\\": "src",
-        "Php\\Package\\Tests\\": "tests"
+        "Php\\Project\\": "src",
+        "Php\\Project\\Tests\\": "tests"
       },
       "files": [
-        "src/Cli.php"
+        "src/Cli.php",
+        "src/Engine.php",
+        "src/games/Even.php",
+        "src/games/Calc.php"
       ]
     },
     "require-dev": {

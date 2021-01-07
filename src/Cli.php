@@ -20,3 +20,22 @@ function isEven(int $number): bool
 
     return false;
 }
+
+function calc($num1 , $num2, $symbol)
+{
+    $result;
+    switch($symbol)
+    {
+        case "+":
+            $result = $num1 + $num2;
+            break;
+        case "-":
+            $result = $num1 - $num2;
+            break;
+        case '*':
+            $result = $num1 * $num2;
+            break;
+    }
+
+    return $result;
+}
