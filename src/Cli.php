@@ -39,3 +39,21 @@ function calc($num1 , $num2, $symbol)
 
     return $result;
 }
+
+function gcd($num1, $num2)
+{
+    $gcd;
+    if ($num1 > $num2) {
+        $temp = $num1;
+        $num1 = $num2;
+        $num2 = $temp;
+    }
+
+    for($i = 1; $i < ($num1+1); $i++) {
+        if ($num1 % $i == 0 && $num2 % $i == 0) {
+            $gcd = $i;
+        }
+    }
+
+    return $gcd;
+}
