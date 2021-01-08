@@ -6,3 +6,5 @@
 * [Demo Brain-Even](https://asciinema.org/a/382895?t=5)
 
 * [Demo Brain-Calc](https://asciinema.org/a/383081)
+
+* [Demo Brain-Gcd](https://asciinema.org/a/383453)
