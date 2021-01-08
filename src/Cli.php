@@ -23,7 +23,7 @@ function isEven(int $number): bool
 
 function calc($num1 , $num2, $symbol)
 {
-    $result;
+    $result = 0;
     switch($symbol)
     {
         case "+":
@@ -42,7 +42,6 @@ function calc($num1 , $num2, $symbol)
 
 function gcd($num1, $num2)
 {
-    $gcd;
     if ($num1 > $num2) {
         $temp = $num1;
         $num1 = $num2;
