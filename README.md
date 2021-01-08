@@ -11,4 +11,4 @@
 
 * [Demo Brain-Progression](https://asciinema.org/a/383462)
 
-* [Demo Brain-Progression](https://asciinema.org/a/383466)
+* [Demo Brain-Prime](https://asciinema.org/a/383466)
