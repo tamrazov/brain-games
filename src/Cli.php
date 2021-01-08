@@ -57,3 +57,15 @@ function gcd($num1, $num2)
 
     return $gcd;
 }
+
+function generateProgression($a, $d, $n): array
+{
+    $progression = [];
+    $result = $a;
+    for ($i = 0; $i < $n; $i++) {
+        $result = $result + $d;
+        $progression[] = $result;
+    }
+
+    return $progression;
+}
