@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const COUNT_QUESTIONS = 3;
 
-function engine(string $description, callable $game): mixed
+function engine(string $description, callable $game)
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -24,7 +24,9 @@ function engine(string $description, callable $game): mixed
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $rightAnswer);
             line("Let's try again, %s!", $name);
+            return;
         }
     }
     line("Congratulations, %s!", $name);
+    return;
 }
