@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const COUNT_QUESTIONS = 3;
 
-function engine(string $description, $game)
+function engine(string $description, $game): any
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
