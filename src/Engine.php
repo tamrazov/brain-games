@@ -22,7 +22,8 @@ function engine(string $description, $game)
         if ($userAnswer == $rightAnswer) {
             line('Correct!');
         } else {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'.Let's try again, %s!", $userAnswer, $rightAnswer);
+            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $rightAnswer);
+            line("Let's try again, %s!", $name);
             return;
         }
     }
