@@ -13,7 +13,7 @@ function run(): void
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
         $arrSymbols = array("+", "-", "*");
-        $randomSymbol = $arrSymbols[(string) array_rand($arrSymbols, 1)];
+        $randomSymbol = $arrSymbols[(int) array_rand($arrSymbols, 1)];
         $question = "{$num1} {$randomSymbol} {$num2}";
         $answer = calc($num1, $num2, $randomSymbol);
 

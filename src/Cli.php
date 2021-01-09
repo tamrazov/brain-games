@@ -5,7 +5,7 @@ namespace Php\Project\Cli;
 use function cli\line;
 use function cli\prompt;
 
-function hello()
+function hello(): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -21,7 +21,7 @@ function isEven(int $number): bool
     return false;
 }
 
-function calc(int $num1, int $num2, string $symbol)
+function calc(int $num1, int $num2, string $symbol): int
 {
     $result = 0;
     switch ($symbol) {
