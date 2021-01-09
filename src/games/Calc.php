@@ -12,8 +12,8 @@ function run(): void
     $getGameData = function (): array {
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
-        $arrSymbols = ["+", "-", "*"];
-        $randomKey = (int) array_rand($arrSymbols, 1);
+        $arrSymbols = array("+", "-", "*");
+        $randomKey = (int) array_rand($arrSymbols);
         $randomSymbol = $arrSymbols[$randomKey];
         $question = "{$num1} {$randomSymbol} {$num2}";
         $answer = calc($num1, $num2, $randomSymbol);
