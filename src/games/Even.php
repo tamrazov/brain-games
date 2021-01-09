@@ -9,7 +9,7 @@ const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 
 function run()
 {
-    $getGameData = function () {
+    $getGameData = function (): array {
         $question = rand(1, 20);
         $answer = isEven($question) ? "yes" : "no";
 

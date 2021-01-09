@@ -9,19 +9,19 @@ const DESCRIPTION = 'What number is missing in the progression?';
 
 function run()
 {
-    $getGameData = function () {
+    $getGameData = function (): array {
         $startProgression = rand(1, 5);
         $stepProgression = rand(1, 3);
         $lengthProgression = rand(6, 10);
         $progression = generateProgression($startProgression, $stepProgression, $lengthProgression);
-        $randNumberFromProgression = array_rand($progression);
+        $randNumberFromProgression = (int) array_rand($progression);
 
         $answer = $progression[$randNumberFromProgression];
         array_splice($progression, $randNumberFromProgression, 1, "..");
-        $question = implode($progression, " ");
+        $question = implode(" ", $progression);
 
         return array(
-            "question" => (string) $question,
+            "question" => $question,
             "rightAnswer" => (string) $answer
         );
     };

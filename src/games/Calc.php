@@ -15,10 +15,10 @@ function run()
         $arrSymbols = array("+", "-", "*");
         $randomSymbol = $arrSymbols[array_rand($arrSymbols, 1)];
         $question = "{$num1} {$randomSymbol} {$num2}";
-        $answer = strval(calc($num1, $num2, $randomSymbol));
+        $answer = calc($num1, $num2, $randomSymbol);
 
         return array(
-            "question" => (string) $question,
+            "question" => $question,
             "rightAnswer" => (string) $answer
         );
     };
