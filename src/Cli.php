@@ -39,7 +39,7 @@ function calc($num1, $num2, $symbol)
     return $result;
 }
 
-function gcd($num1, $num2): integer
+function gcd($num1, $num2)
 {
     $gcd;
     if ($num1 > $num2) {
