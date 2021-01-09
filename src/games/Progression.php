@@ -7,7 +7,7 @@ use function Php\Project\Engine\engine;
 
 const DESCRIPTION = 'What number is missing in the progression?';
 
-function run(): mixed
+function run()
 {
     $getGameData = function (): array {
         $startProgression = rand(1, 5);
@@ -26,5 +26,5 @@ function run(): mixed
         );
     };
 
-    return engine(DESCRIPTION, $getGameData);
+    engine(DESCRIPTION, $getGameData);
 }

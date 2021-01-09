@@ -7,7 +7,7 @@ use function Php\Project\Engine\engine;
 
 const DESCRIPTION = '"yes" if given number is prime. Otherwise answer "no".';
 
-function run(): mixed
+function run()
 {
     $getGameData = function (): array {
         $number = rand(1, 100);
@@ -20,5 +20,5 @@ function run(): mixed
         );
     };
 
-    return engine(DESCRIPTION, $getGameData);
+    engine(DESCRIPTION, $getGameData);
 }

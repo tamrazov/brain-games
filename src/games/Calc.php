@@ -7,7 +7,7 @@ use function Php\Project\Engine\engine;
 
 const DESCRIPTION = 'What is the result of the expression?';
 
-function run(): mixed
+function run()
 {
     $getGameData = function (): array {
         $num1 = rand(1, 10);
@@ -23,5 +23,5 @@ function run(): mixed
         );
     };
 
-    return engine(DESCRIPTION, $getGameData);
+    engine(DESCRIPTION, $getGameData);
 }
