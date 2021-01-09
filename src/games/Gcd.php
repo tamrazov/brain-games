@@ -21,5 +21,5 @@ function run(): mixed
         );
     };
 
-    engine(DESCRIPTION, $getGameData);
+    return engine(DESCRIPTION, $getGameData);
 }
