@@ -19,6 +19,6 @@ function run()
             "rightAnswer" => (string) $answer
         );
     };
-    
+
     engine(DESCRIPTION, $getGameData);
 }

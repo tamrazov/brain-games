@@ -15,7 +15,7 @@ function run()
         $lengthProgression = rand(6, 10);
         $progression = generateProgression($startProgression, $stepProgression, $lengthProgression);
         $randNumberFromProgression = array_rand($progression);
-        
+
         $answer = $progression[$randNumberFromProgression];
         array_splice($progression, $randNumberFromProgression, 1, "..");
         $question = implode($progression, " ");
@@ -25,6 +25,6 @@ function run()
             "rightAnswer" => (string) $answer
         );
     };
-    
+
     engine(DESCRIPTION, $getGameData);
 }
