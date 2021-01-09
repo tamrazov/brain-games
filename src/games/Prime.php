@@ -20,5 +20,5 @@ function run(): void
         );
     };
 
-    engine(DESCRIPTION, $getGameData);
+    engine(DESCRIPTION_PRIME, $getGameData);
 }
