@@ -19,19 +19,8 @@ to win the game. The first wrong answer ends the game.
 
 #### Games list  
 
-- brain-even - specify if the number is even or not.
-- brain-calc - find the result of simple math expression
-- brain-gcd - find the greatest common divisor of two given numbers
-- brain-balance - balance the number (the difference of two digits in the given number should not equal more than one)
-- brain-progression - find a missed number in the arithmetic progression
-- brain-prime - specify if the number is prime or not
-
-* [Demo Brain-Even](https://asciinema.org/a/382895?t=5)
-
-* [Demo Brain-Calc](https://asciinema.org/a/383081)
-
-* [Demo Brain-Gcd](https://asciinema.org/a/383453)
-
-* [Demo Brain-Progression](https://asciinema.org/a/383462)
-
-* [Demo Brain-Prime](https://asciinema.org/a/383466)
+- brain-even - specify if the number is even or not. [Demo](https://asciinema.org/a/382895?t=5)
+- brain-calc - find the result of simple math expression. [Demo](https://asciinema.org/a/383081)
+- brain-gcd - find the greatest common divisor of two given numbers. [Demo](https://asciinema.org/a/383453)
+- brain-progression - find a missed number in the arithmetic progression. [Demo](https://asciinema.org/a/383462)
+- brain-prime - specify if the number is prime or not. [Demo](https://asciinema.org/a/383466)
