@@ -21,9 +21,9 @@ function isEven(int $number): bool
     return false;
 }
 
-function calc($num1, $num2, $symbol)
+function calc(int $num1, int $num2, string $symbol)
 {
-    $result;
+    $result = 0;
     switch ($symbol) {
         case "+":
             $result = $num1 + $num2;
