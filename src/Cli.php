@@ -69,7 +69,7 @@ function generateProgression(int $a, int $d, int $n): array
     return $progression;
 }
 
-function isPrime(int $num): boolean
+function isPrime(int $num): bool
 {
     if ($num == 1) {
         return false;
