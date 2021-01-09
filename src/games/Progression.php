@@ -12,12 +12,12 @@ function run()
     $getGameData = function () {
         $startProgression = rand(1, 5);
         $stepProgression = rand(1, 3);
-        $lengthProgression = rand(5, 10);
+        $lengthProgression = rand(6, 10);
         $progression = generateProgression($startProgression, $stepProgression, $lengthProgression);
         $randNumberFromProgression = array_rand($progression);
         
         $answer = $progression[$randNumberFromProgression];
-        array_splice($progression, $randNumberFromProgression, 1, "**");
+        array_splice($progression, $randNumberFromProgression, 1, "..");
         $question = implode($progression, " ");
 
         return array(
