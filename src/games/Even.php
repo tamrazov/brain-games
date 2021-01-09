@@ -7,7 +7,7 @@ use function Php\Project\Engine\engine;
 
 const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 
-function run()
+function run(): mixed
 {
     $getGameData = function (): array {
         $question = rand(1, 20);
