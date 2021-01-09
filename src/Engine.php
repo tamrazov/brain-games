@@ -14,7 +14,7 @@ function engine(string $description, $game)
     line("Hello, %s!", $name);
     line($description);
 
-    for($i = 0; $i < COUNT_QUESTIONS; $i++) {
+    for ($i = 0; $i < COUNT_QUESTIONS; $i++) {
         ["question" => $question, "rightAnswer" => $rightAnswer] = $game();
         line("Question: %s", $question);
         $userAnswer = prompt("Your answer");

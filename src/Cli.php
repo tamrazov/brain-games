@@ -15,17 +15,16 @@ function hello()
 function isEven(int $number): bool
 {
     if ($number % 2 == 0) {
-      return true;
+        return true;
     }
 
     return false;
 }
 
-function calc($num1 , $num2, $symbol)
+function calc($num1, $num2, $symbol)
 {
     $result;
-    switch($symbol)
-    {
+    switch ($symbol) {
         case "+":
             $result = $num1 + $num2;
             break;
@@ -49,7 +48,7 @@ function gcd($num1, $num2)
         $num2 = $temp;
     }
 
-    for($i = 1; $i < ($num1+1); $i++) {
+    for ($i = 1; $i < ($num1 + 1); $i++) {
         if ($num1 % $i == 0 && $num2 % $i == 0) {
             $gcd = $i;
         }
@@ -76,11 +75,11 @@ function isPrime($num)
         return 0;
     }
 
-    for ($i = 2; $i <= $num / 2; $i++){ 
+    for ($i = 2; $i <= $num / 2; $i++) {
         if ($num % $i == 0) {
-            return 0; 
+            return 0;
         }
     }
 
-    return 1; 
+    return 1;
 }
