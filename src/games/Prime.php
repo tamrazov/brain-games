@@ -7,7 +7,7 @@ use function Php\Project\Engine\engine;
 
 const DESCRIPTION = '"yes" if given number is prime. Otherwise answer "no".';
 
-function run()
+function run(): void
 {
     $getGameData = function (): array {
         $number = rand(1, 100);

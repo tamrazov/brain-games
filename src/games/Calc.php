@@ -7,7 +7,7 @@ use function Php\Project\Engine\engine;
 
 const DESCRIPTION = 'What is the result of the expression?';
 
-function run()
+function run(): void
 {
     $getGameData = function (): array {
         $num1 = rand(1, 10);

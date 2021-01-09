@@ -7,7 +7,7 @@ use function Php\Project\Cli\gcd;
 
 const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
-function run()
+function run(): void
 {
     $getGameData = function (): array {
         $num1 = rand(1, 20);
