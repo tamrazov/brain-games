@@ -2,8 +2,8 @@
 
 namespace Php\Project\Engine;
 
-use function \cli\line;
-use function \cli\prompt;
+use function cli\line;
+use function cli\prompt;
 
 const COUNT_QUESTIONS = 3;
 
