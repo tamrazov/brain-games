@@ -5,7 +5,7 @@ namespace Php\Project\Even;
 use function Php\Project\Cli\isEven;
 use function Php\Project\Engine\engine;
 
-const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
+define('DESCRIPTION_EVEN', 'Answer "yes" if number even otherwise answer "no".');
 
 function run(): void
 {

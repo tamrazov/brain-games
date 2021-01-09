@@ -5,7 +5,7 @@ namespace Php\Project\Prime;
 use function Php\Project\Cli\isPrime;
 use function Php\Project\Engine\engine;
 
-const DESCRIPTION = '"yes" if given number is prime. Otherwise answer "no".';
+define('DESCRIPTION_PRIME', '"yes" if given number is prime. Otherwise answer "no".');
 
 function run(): void
 {

@@ -5,7 +5,7 @@ namespace Php\Project\Progression;
 use function Php\Project\Cli\generateProgression;
 use function Php\Project\Engine\engine;
 
-const DESCRIPTION = 'What number is missing in the progression?';
+define('DESCRIPTION_PROGRESSION', 'What number is missing in the progression?');
 
 function run(): void
 {

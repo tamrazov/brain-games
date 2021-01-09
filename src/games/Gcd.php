@@ -5,7 +5,7 @@ namespace Php\Project\Gcd;
 use function Php\Project\Engine\engine;
 use function Php\Project\Cli\gcd;
 
-const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
+define('DESCRIPTION_GCD', 'Find the greatest common divisor of given numbers.');
 
 function run(): void
 {

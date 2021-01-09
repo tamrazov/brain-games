@@ -5,7 +5,7 @@ namespace Php\Project\Calc;
 use function Php\Project\Cli\calc;
 use function Php\Project\Engine\engine;
 
-const DESCRIPTION = 'What is the result of the expression?';
+define('DESCRIPTION_CALC', 'What is the result of the expression?');
 
 function run(): void
 {

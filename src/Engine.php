@@ -5,7 +5,7 @@ namespace Php\Project\Engine;
 use function cli\line;
 use function cli\prompt;
 
-const COUNT_QUESTIONS = 3;
+define('COUNT_QUESTIONS', 3);
 
 function engine(string $description, callable $game): void
 {
