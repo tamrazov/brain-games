@@ -5,7 +5,7 @@ namespace Php\Project\Cli;
 use function cli\line;
 use function cli\prompt;
 
-function hello()
+function hello(): mixed
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -39,9 +39,9 @@ function calc(int $num1, int $num2, string $symbol)
     return $result;
 }
 
-function gcd($num1, $num2)
+function gcd(int $num1, int $num2): int
 {
-    $gcd;
+    $gcd = 0;
     if ($num1 > $num2) {
         $temp = $num1;
         $num1 = $num2;
@@ -57,7 +57,7 @@ function gcd($num1, $num2)
     return $gcd;
 }
 
-function generateProgression($a, $d, $n): array
+function generateProgression(int $a, int $d, int $n): array
 {
     $progression = [];
     $result = $a;
@@ -69,7 +69,7 @@ function generateProgression($a, $d, $n): array
     return $progression;
 }
 
-function isPrime($num)
+function isPrime(int $num): int
 {
     if ($num == 1) {
         return 0;
