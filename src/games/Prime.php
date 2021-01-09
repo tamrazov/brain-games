@@ -16,7 +16,7 @@ function run()
 
         return array(
             "question" => (string) $question,
-            "rightAnswer" => (string) $answer
+            "rightAnswer" => $answer
         );
     };
 

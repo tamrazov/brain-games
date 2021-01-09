@@ -16,7 +16,7 @@ function run()
         $answer = gcd($num1, $num2);
 
         return array(
-            "question" => (string) $question,
+            "question" => $question,
             "rightAnswer" => (string) $answer
         );
     };
