@@ -2,8 +2,8 @@
 
 namespace Php\Project\Cli;
 
-use function cli\line;
-use function cli\prompt;
+use function \cli\line;
+use function \cli\prompt;
 
 function hello()
 {
@@ -39,7 +39,7 @@ function calc($num1, $num2, $symbol)
     return $result;
 }
 
-function gcd($num1, $num2)
+function gcd($num1, $num2): integer
 {
     $gcd;
     if ($num1 > $num2) {
