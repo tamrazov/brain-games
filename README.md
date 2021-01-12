@@ -9,7 +9,7 @@ Simple games to boost your brain.
 #### Installing  
 
 ```
-composer global require mvaload/brain-games
+composer require aleksandrtamrazov/brain-games
 ```
 
 #### Description  
